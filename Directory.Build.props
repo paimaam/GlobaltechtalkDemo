@@ -9,13 +9,13 @@
 
   <PropertyGroup>
     <Description>A Sample client for publishing nuget</Description>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
     <Authors>Dileep</Authors>
     <PackageTags>logic;tech;talk</PackageTags>
     <PackageIconUrl>https://console.kmdlogic.io/favicon-32x32.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/paimaam/TechTalks</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/paimaam/GlobaltechtalkDemo</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/paimaam/TechTalks</RepositoryUrl>
+    <RepositoryUrl>https://github.com/paimaam/GlobaltechtalkDemo</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
   </PropertyGroup>
