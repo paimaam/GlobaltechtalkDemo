@@ -8,5 +8,10 @@ namespace Kmd.Tech.Talk.Calculator
         {
             return a + b;
         }
+
+        public int Substract(int a, int b)
+        {
+            return a - b;
+        }
     }
 }
