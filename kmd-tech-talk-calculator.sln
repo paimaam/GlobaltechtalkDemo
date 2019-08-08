@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78BA30EC-740B-4726-9813-27B67BBD80D7}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		CHANGES.md = CHANGES.md
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		kmd-tech-talk-calculator.sln.DotSettings = kmd-tech-talk-calculator.sln.DotSettings
+		LICENSE = LICENSE
+		README.md = README.md
+		setup.ps1 = setup.ps1
+		setup.sh = setup.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kmd.Tech.Talk.Calculator", "src\Kmd.Tech.Talk.Calculator\Kmd.Tech.Talk.Calculator.csproj", "{9520718F-DD3B-47DF-8200-1BD6957EAAD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9520718F-DD3B-47DF-8200-1BD6957EAAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9520718F-DD3B-47DF-8200-1BD6957EAAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9520718F-DD3B-47DF-8200-1BD6957EAAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9520718F-DD3B-47DF-8200-1BD6957EAAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB2768C0-4846-4C7F-8753-98B16CCF73B0}
+	EndGlobalSection
+EndGlobal
