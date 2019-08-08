@@ -1,0 +1,30 @@
+version: '{build}'
+skip_tags: true
+image:
+  - Visual Studio 2019
+configuration: Release
+test: false
+install:
+  - ps: ./setup.ps1
+build_script:
+  - ps: dotnet --info
+  - ps: dotnet --list-sdks
+  - ps: ./build.ps1
+artifacts:
+- path: artifacts/Kmd.Tech.Talk.Calculator*.nupkg
+deploy:
+- provider: NuGet
+  api_key:
+    secure: ekXE6iTkLuwX6LDvocoh20YTy8mtbcMrfSgPUSdKGOGelaycwXGeM50CZZxdAg3y
+  skip_symbols: true
+  on:
+    branch: /^(master|dev)$/
+    CI_WINDOWS: true
+- provider: GitHub
+  auth_token:
+    secure: YB9REyb1qj/WWFdcsH6S/zFaa1NKxCKxD6OyVRKesExHv96T8V9McNO968VbH+Pm
+  artifact: /Kmd.Tech.Talk.Calculator.*\.nupkg/
+  tag: v$(appveyor_build_version)
+  on:
+    branch: master
+    CI_WINDOWS: true
